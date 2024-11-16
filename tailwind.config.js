@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        "footer": "url('/wave-separator-white-top.webp')"
+      }
     },
   },
   plugins: [],
