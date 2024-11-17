@@ -6,11 +6,11 @@ const Features = () => {
     <section className="py-24 px-4">
       <div className="max-w-screen-lg mx-auto">
         <Heading h2={"features"} />
-        <p className=" mt-5 text-center text-slate-300">
+        <p className=" mt-5 text-center text-slate-600">
           All You Need to Create a Pro Website
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-slate-50 mt-10 gap-5">
-          <div className="border border-slate-50 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-slate-600 mt-10 gap-5">
+          <div className="border border-slate-500 shadow-blue-400 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"
@@ -25,7 +25,7 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="border border-slate-50 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"
@@ -40,7 +40,7 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="border border-slate-50 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"
@@ -55,7 +55,7 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="border border-slate-50 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"
@@ -70,7 +70,7 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="border border-slate-50 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"
@@ -85,7 +85,7 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="border border-slate-50 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"
@@ -100,7 +100,7 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="border border-slate-50 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"
@@ -115,7 +115,7 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="border border-slate-50 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"

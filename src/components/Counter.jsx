@@ -49,14 +49,14 @@ const Counter = () => {
   }, []);
 
   return (
-    <section className="">
+    <section className="" id="counter">
       <div className="flex flex-wrap max-w-screen-xl mt-12 mx-auto border-image-top justify-center gap-8 p-6">
         {counters.map((counter, index) => (
           <div key={index} className="text-center">
-            <p className="text-4xl font-bold text-slate-100 mb-2">
+            <p className="text-4xl font-bold text-slate-800 mb-2">
               {counter.value.toLocaleString()}
             </p>
-            <p className="text-lg text-gray-500">{counter.label}</p>
+            <p className="text-lg text-slate-600">{counter.label}</p>
           </div>
         ))}
         <div className="border-image-bottom w-full"></div>

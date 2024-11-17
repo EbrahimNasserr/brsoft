@@ -9,7 +9,7 @@ const Section3 = () => {
         <div className=" flex flex-col justify-center items-center gap-10 text-center text-slate-50 md:text-start md:justify-between md:flex-row-reverse">
           <div className="md:w-1/2">
             <Heading h2="start" span="working with us" />
-            <p className=" my-5 text-slate-300 leading-relaxed">
+            <p className=" my-5 text-slate-600 leading-relaxed">
               At BrSofr, we specialize in crafting innovative software solutions
               that empower businesses to thrive in a digital-first world.
               Founded with a passion for technology and a commitment to

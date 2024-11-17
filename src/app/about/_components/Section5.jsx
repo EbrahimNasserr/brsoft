@@ -8,7 +8,7 @@ const Section5 = () => {
       <div className=" flex flex-col justify-center items-center gap-10 text-center text-slate-50 md:text-start md:justify-between md:flex-row">
         <div className="md:w-1/2">
           <Heading h2="modern" span="Solutions" />
-          <p className=" my-5 text-slate-300 leading-relaxed"> 
+          <p className=" my-5 text-slate-600 leading-relaxed"> 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
             ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

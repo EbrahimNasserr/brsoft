@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { TweenMax, Expo } from "gsap";
 import Link from "next/link";
+import { FaArrowDown } from "react-icons/fa";
 
 export default function Hero() {
   useEffect(() => {
@@ -108,26 +109,25 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="max-w-screen-2xl mx-auto h-screen">
+    <section className="max-w-screen-2xl relative mx-auto h-screen">
+      <header className="logo absolute top-0 left-0 right-0 flex p-4 justify-between items-center">
+        <div>BRSOFT</div>
+        <nav>
+          <ul className="text-white flex gap-10 justify-between items-center uppercase">
+            <li>
+              <Link href="about">about us</Link>
+            </li>
+            <li>
+              <Link href="services">services</Link>
+            </li>
+            <li>
+              <Link href="contact">contact</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <div>
         <div className="left-col">
-          <header className="logo flex p-4 justify-between items-center">
-            <div>BRSOFT</div>
-            <nav>
-              <ul className="text-white flex gap-10 justify-between items-center uppercase">
-                <li>
-                  <Link href="about">about us</Link>
-                </li>
-                <li>
-                  <Link href="services">services</Link>
-                </li>
-                <li>
-                  <Link href="contact">contact</Link>
-                </li>
-              </ul>
-            </nav>
-          </header>
-
           <div className="year">EST 1994</div>
           <div className="cover"></div>
           <div className="data">
@@ -139,6 +139,9 @@ export default function Hero() {
             </div>
           </div>
           <div className="block-cover"></div>
+          <a href="#counter" className=" absolute flex justify-center items-center bottom-0 m-4 right-0 p-4 w-12 h-20 rounded-full border">
+            <FaArrowDown size={50} className="text-slate-50 scroll" />
+          </a>
         </div>
 
         <div className="right-col">
@@ -178,9 +181,6 @@ export default function Hero() {
           <div className="upper-block"></div>
           <div className="bottom">
             <div className="next"></div>
-            <div className="more">
-              <p id="more">More like this</p>
-            </div>
           </div>
           <div className="block-bottom"></div>
         </div>

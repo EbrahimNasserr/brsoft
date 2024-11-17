@@ -1,8 +1,8 @@
 const Section2 = () => {
   return (
-    <section className=" py-12 p-4 bg-[#0A6ED3]">
+    <section className=" py-12 p-4 rounded-2xl bg-[#0A6ED3]">
       <div className="max-w-screen-xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-slate-50 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-slate-50  text-center md:text-left">
           <div>
             <h2 className="capatalize text-3xl font-bold mb-3">Data Analyis</h2>
             <p className=" leading-relaxed text-slate-300">

@@ -21,13 +21,13 @@ const Services = () => {
                 />
               </h3>
             </div>
-            <p>
+            <p className="text-slate-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
               libero!
             </p>
           </div>
           <div className="flex flex-col gap-3">
-          <div className=" flex justify-center items-center">
+            <div className=" flex justify-center items-center">
               <h3 className=" relative w-fit capitalize text-3xl font-semibold text-slate-900">
                 any data
                 <Image
@@ -40,13 +40,13 @@ const Services = () => {
                 />
               </h3>
             </div>
-            <p>
+            <p className="text-slate-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
               libero!
             </p>
           </div>
           <div className="flex flex-col gap-3">
-          <div className=" flex justify-center items-center">
+            <div className=" flex justify-center items-center">
               <h3 className=" relative w-fit capitalize text-3xl font-semibold text-slate-900">
                 any data
                 <Image
@@ -59,7 +59,7 @@ const Services = () => {
                 />
               </h3>
             </div>
-            <p>
+            <p className="text-slate-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
               libero!
             </p>

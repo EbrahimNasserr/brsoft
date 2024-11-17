@@ -1,6 +1,6 @@
 export default function Section4() {
   return (
-    <section className="flex flex-col items-center justify-center py-24 text-slate-50 p-4">
+    <section className="flex flex-col items-center justify-center py-24 text-slate-800 p-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
         {/* Step 1 */}
         <div className="flex flex-col items-center">
@@ -28,7 +28,7 @@ export default function Section4() {
           <h3 className="mt-4 text-lg font-semibold">
             Set Your Goals
           </h3>
-          <p className="mt-2 text-slate-300">
+          <p className="mt-2 text-slate-600">
             Identify your objectives and create a clear roadmap to achieve
             success.
           </p>
@@ -60,7 +60,7 @@ export default function Section4() {
           <h3 className="mt-4 text-lg font-semibold">
             Get Our Expertise
           </h3>
-          <p className="mt-2 text-slate-300">
+          <p className="mt-2 text-slate-600">
             Leverage our industry knowledge to tackle challenges effectively.
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function Section4() {
           <h3 className="mt-4 text-lg font-semibold">
             See Results
           </h3>
-          <p className="mt-2 text-slate-300">
+          <p className="mt-2 text-slate-600">
             Witness measurable growth and tangible outcomes.
           </p>
         </div>

@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   font-family: Helvetica;
-  background-color: #00143f;
+  background-color: #fff;
 }
 
 .left-col,
@@ -60,12 +64,13 @@ body {
 }
 
 .logo {
-  font-family: Poppins;
   color: #fff;
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   font-weight: bolder;
   z-index: 1;
-  width: 50%;
 }
 
 .year {
@@ -96,8 +101,7 @@ body {
   transform: translate(-50%, -50%);
   width: 45%;
   height: 65%;
-  background: url("/colorful_logo_svgweb.svg")
-    no-repeat 50% 50%;
+  background: url("/colorful_logo_svgweb.svg") no-repeat 50% 50%;
   background-size: contain;
   opacity: 0;
   animation: appear-text 0.0001s linear forwards;
@@ -295,13 +299,13 @@ body {
 
 .border-image-bottom {
   border-bottom: 2px solid white;
-  border-image: linear-gradient(to right, rgb(255, 255, 255), transparent) 2 / 1 /
+  border-image: linear-gradient(to right, rgb(0, 0, 0), transparent) 2 / 1 /
     0 stretch;
 }
 
 .border-image-top {
   border-top: 2px solid white;
-  border-image: linear-gradient(to left, rgb(255, 255, 255), transparent) 2 / 1 /
+  border-image: linear-gradient(to left, rgb(0, 0, 0), transparent) 2 / 1 /
     0 stretch;
 }
 
@@ -311,12 +315,25 @@ body {
 }
 
 @keyframes fade-in {
-  from{
+  from {
     opacity: 0.3;
     transform: scale(0.5);
   }
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+.scroll {
+  animation: scroll 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
   }
 }
