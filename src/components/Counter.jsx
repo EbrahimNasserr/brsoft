@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -18,8 +17,6 @@ const Counter = () => {
     stats.map((stat) => ({ value: 0, label: stat.label }))
   );
 
-  const imageRef = useRef(null);
-
   useEffect(() => {
     stats.forEach((stat, index) => {
       const interval = setInterval(() => {
@@ -33,18 +30,6 @@ const Counter = () => {
           return newCounters;
         });
       }, 50); // Shorter interval for smoother effect
-    });
-
-    // Smooth scroll effect using ScrollTrigger
-    gsap.to(imageRef.current, {
-      scrollTrigger: {
-        trigger: imageRef.current,
-        start: "top center", // Adjust as needed for smooth timing
-        end: "+=500", // Longer scroll distance
-        scrub: 1.5, // Increase scrub for smoother scroll syncing
-      },
-      y: 300, // Distance the image moves
-      ease: "power1.out", // Smooth easing function
     });
   }, []);
 
@@ -60,13 +45,6 @@ const Counter = () => {
           </div>
         ))}
         <div className="border-image-bottom w-full"></div>
-        <Image
-          src="/206415587_10824551_animation.gif"
-          width={500}
-          height={500}
-          alt="gif"
-          ref={imageRef}
-        />
       </div>
     </section>
   );

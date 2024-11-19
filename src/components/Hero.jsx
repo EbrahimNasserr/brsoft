@@ -1,10 +1,12 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { TweenMax, Expo } from "gsap";
-import Link from "next/link";
 import { FaArrowDown } from "react-icons/fa";
+import Header from "./Header/Header";
 
 export default function Hero() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     TweenMax.from(".left-col", 2, {
       width: "0%",
@@ -106,26 +108,22 @@ export default function Hero() {
       opacity: 0,
       ease: Expo.easeInOut,
     });
+
+    // Scroll Event Listener
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Change `50` to control when the color changes
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <section className="max-w-screen-2xl relative mx-auto h-screen">
-      <header className="logo absolute top-0 left-0 right-0 flex p-4 justify-between items-center">
-        <div>BRSOFT</div>
-        <nav>
-          <ul className="text-white flex gap-10 justify-between items-center uppercase">
-            <li>
-              <Link href="about">about us</Link>
-            </li>
-            <li>
-              <Link href="services">services</Link>
-            </li>
-            <li>
-              <Link href="contact">contact</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Header isScrolled={isScrolled} />
       <div>
         <div className="left-col">
           <div className="year">EST 1994</div>
@@ -139,7 +137,10 @@ export default function Hero() {
             </div>
           </div>
           <div className="block-cover"></div>
-          <a href="#counter" className=" absolute flex justify-center items-center bottom-0 m-4 right-0 p-4 w-12 h-20 rounded-full border">
+          <a
+            href="#counter"
+            className="absolute flex justify-center items-center bottom-0 m-4 right-0 p-4 w-12 h-20 rounded-full border"
+          >
             <FaArrowDown size={50} className="text-slate-50 scroll" />
           </a>
         </div>

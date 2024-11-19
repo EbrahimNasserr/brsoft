@@ -1,4 +1,5 @@
 const Section2 = () => {
+  
   return (
     <section className=" py-12 p-4 rounded-2xl bg-[#0A6ED3]">
       <div className="max-w-screen-xl mx-auto">

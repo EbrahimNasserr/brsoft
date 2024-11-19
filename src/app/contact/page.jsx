@@ -4,8 +4,9 @@ import Section2 from "./_components/Section2";
 const Contact = () => {
   return (
     <main>
-      <Section1 />
       <Section2 />
+      <Section1 />
+      
     </main>
   );
 };

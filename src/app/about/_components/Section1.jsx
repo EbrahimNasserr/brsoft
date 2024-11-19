@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 const Section1 = () => {
+  
   return (
     <section className="h-screen">
       <div className="max-w-screen-xl p-4 mx-auto h-full flex flex-col justify-center items-center text-center lg:flex-row lg:justify-between">
