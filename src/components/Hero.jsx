@@ -109,21 +109,12 @@ export default function Hero() {
       ease: Expo.easeInOut,
     });
 
-    // Scroll Event Listener
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50); // Change `50` to control when the color changes
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    
   }, []);
 
   return (
     <section className="max-w-screen-2xl relative mx-auto h-screen">
-      <Header isScrolled={isScrolled} />
+      <Header />
       <div>
         <div className="left-col">
           <div className="year">EST 1994</div>

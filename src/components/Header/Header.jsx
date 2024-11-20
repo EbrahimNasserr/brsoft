@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
 import Button from "./Button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Nav from "./Nav/Nav";
 import styles from "./style.module.scss";
@@ -27,8 +28,22 @@ const menu = {
   },
 };
 
-const Header = ({ isScrolled }) => {
+const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    // Scroll Event Listener
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Change `50` to control when the color changes
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>

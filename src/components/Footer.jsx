@@ -13,20 +13,20 @@ const Footer = () => {
         <div className="bg-footer absolute inset-0 bg-no-repeat -z-10"></div>
         <div className="grid grid-cols-1 md:grid-cols-3 text-center text-slate-600 gap-10">
           <div>
+            <div className=" flex justify-center items-center md:justify-start">
+              <Image
+                src="/colorful_logo_main.svg"
+                width={200}
+                height={200}
+                alt="logo"
+                loading="lazy"
+              />
+            </div>
             <p className=" my-3 md:text-left text-slate-600 leading-relaxed">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
               architecto reprehenderit illum voluptatem sit cum at quas repellat
               ipsum dicta?
             </p>
-            <div className=" flex justify-center items-center md:justify-start">
-              <Image
-                src="/colorful_logo_svgweb.svg"
-                width={50}
-                height={50}
-                alt="logo"
-                loading="lazy"
-              />
-            </div>
           </div>
           <div>
             <h2 className="text-4xl capitalize my-3">quickLinks</h2>

@@ -333,3 +333,8 @@ body {
     transform: translateY(20px);
   }
 }
+
+.box:hover .circle {
+  width: 150%;
+  height: 150%;
+}

@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Products from "@/components/Products/Products";
 import LenisScroll from "@/components/LenisScroll";
 import Services from "@/components/Services";
+import Smooth from "@/components/Smooth/Smooth";
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Products />
       <Services />
       <About />
+      <Smooth />
     </main>
   );
 }
