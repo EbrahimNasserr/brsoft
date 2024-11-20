@@ -4,7 +4,6 @@ import { projects } from "../../Data";
 import Card from "./Card";
 import { useRef } from "react";
 import { useScroll } from "framer-motion";
-import Link from "next/link";
 
 const Products = () => {
   const container = useRef(null);
@@ -18,14 +17,15 @@ const Products = () => {
       {projects.map((project, i) => {
         const targetScale = 1 - (projects.length - i) * 0.05;
         return (
-          <Card
-            i={i}
-            {...project}
-            progress={scrollYProgress}
-            range={[i * 0.25, 1]}
-            targetScale={targetScale}
-            href={`/products/${project.id}`}
-          />
+          <div key={`p_${i}`}>
+            <Card
+              i={i}
+              {...project}
+              progress={scrollYProgress}
+              range={[i * 0.25, 1]}
+              targetScale={targetScale}
+            />
+          </div>
         );
       })}
     </section>
