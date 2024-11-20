@@ -1,11 +1,15 @@
 "use client";
 import { useEffect, useState } from "react";
 import { TweenMax, Expo } from "gsap";
-import { FaArrowDown } from "react-icons/fa";
+import {
+  FaArrowDown,
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
 import Header from "./Header/Header";
 
 export default function Hero() {
-  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     TweenMax.from(".left-col", 2, {
@@ -108,8 +112,6 @@ export default function Hero() {
       opacity: 0,
       ease: Expo.easeInOut,
     });
-
-    
   }, []);
 
   return (
@@ -161,11 +163,16 @@ export default function Hero() {
 
               <div className="media">
                 <p>Share Our Vision:</p>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                <ul className=" flex justify-center text-slate-600 items-center gap-10 text-3xl">
+                  <li>
+                    <FaFacebook />
+                  </li>
+                  <li>
+                    <FaInstagram />
+                  </li>
+                  <li>
+                    <FaTwitter />
+                  </li>
                 </ul>
               </div>
             </div>

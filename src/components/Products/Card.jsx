@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./style.module.scss";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 const Card = ({
   i,
@@ -14,6 +15,7 @@ const Card = ({
   progress,
   range,
   targetScale,
+  href,
 }) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -39,9 +41,9 @@ const Card = ({
           <div className={styles.description}>
             <p>{description}</p>
             <span className="flex justify-center items-center gap-6">
-              <a className=" text-slate-50" href={url} target="_blank">
+              <Link className=" text-slate-50" href={href}>
                 See more
-              </a>
+              </Link>
               <svg
                 width="22"
                 height="12"
@@ -59,7 +61,7 @@ const Card = ({
 
           <div className={styles.imageContainer}>
             <motion.div className={styles.inner} style={{ scale: imageScale }}>
-              <Image fill src={`/images/${src}`} alt="image" />
+              <Image fill src={`${src}`} alt="image" />
             </motion.div>
           </div>
         </div>

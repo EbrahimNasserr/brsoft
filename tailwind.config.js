@@ -12,7 +12,7 @@ module.exports = {
         foreground: "var(--foreground)",
       },
       backgroundImage: {
-        "footer": "url('/wave-separator-white-top.webp')"
+        "productPage": "url('/8.jpg')"
       }
     },
   },
