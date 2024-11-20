@@ -17,15 +17,16 @@ const Products = () => {
       {projects.map((project, i) => {
         const targetScale = 1 - (projects.length - i) * 0.05;
         return (
-          <div key={`p_${i}`}>
+          <d key={`${i}`}>
             <Card
               i={i}
               {...project}
               progress={scrollYProgress}
               range={[i * 0.25, 1]}
               targetScale={targetScale}
+              href={`/products/${project.id}`}
             />
-          </div>
+          </d>
         );
       })}
     </section>
