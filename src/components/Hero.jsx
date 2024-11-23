@@ -1,16 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
 import { TweenMax, Expo } from "gsap";
-import {
-  FaArrowDown,
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { RiArrowDownDoubleFill } from "react-icons/ri";
+
 import Header from "./Header/Header";
 
 export default function Hero() {
-
   useEffect(() => {
     TweenMax.from(".left-col", 2, {
       width: "0%",
@@ -115,7 +111,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="max-w-screen-2xl relative mx-auto h-screen">
+    <section className="max-w-screen-2xl relative mx-auto h-screen bg-black">
       <Header />
       <div>
         <div className="left-col">
@@ -134,7 +130,7 @@ export default function Hero() {
             href="#counter"
             className="absolute flex justify-center items-center bottom-0 m-4 right-0 p-4 w-12 h-20 rounded-full border"
           >
-            <FaArrowDown size={50} className="text-slate-50 scroll" />
+            <RiArrowDownDoubleFill className="text-slate-50 scroll text-3xl" />
           </a>
         </div>
 
@@ -164,13 +160,13 @@ export default function Hero() {
               <div className="media">
                 <p>Share Our Vision:</p>
                 <ul className=" flex justify-center text-slate-600 items-center gap-10 text-3xl">
-                  <li>
+                  <li className=" cursor-pointer">
                     <FaFacebook />
                   </li>
-                  <li>
+                  <li className=" cursor-pointer">
                     <FaInstagram />
                   </li>
-                  <li>
+                  <li className=" cursor-pointer">
                     <FaTwitter />
                   </li>
                 </ul>

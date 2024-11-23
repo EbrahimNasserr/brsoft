@@ -1,10 +1,14 @@
 "use client";
 import Link from "next/link";
 import Button from "./Button";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Nav from "./Nav/Nav";
 import styles from "./style.module.scss";
+import { usePathname } from "next/navigation"; // Import usePathname
+import Image from "next/image";
+import LanguageSwitcher from "../LanguageSwitcher";
+import { LanguageContext } from "@/context/LanguageContext";
 
 const menu = {
   open: {
@@ -29,8 +33,11 @@ const menu = {
 };
 
 const Header = () => {
+  const context = useContext(LanguageContext);
+  const { translations } = context;
   const [isScrolled, setIsScrolled] = useState(false);
   const [isActive, setIsActive] = useState(false);
+  const pathname = usePathname(); // Get the current route
 
   useEffect(() => {
     // Scroll Event Listener
@@ -45,6 +52,13 @@ const Header = () => {
     };
   }, []);
 
+  // Check if the current route is 'about', 'services', or 'contact'
+  const isSpecialPage =
+    pathname === "/about" ||
+    pathname === "/services" ||
+    pathname === "/contact" ||
+    pathname === "/work";
+
   return (
     <>
       <header
@@ -52,26 +66,51 @@ const Header = () => {
           isScrolled ? "bg-slate-200" : "bg-transparent"
         }`}
       >
-        <div className={`${isScrolled ? "text-slate-800" : "text-slate-50"}`}>
-          BRSOFT
-        </div>
+        <Link href="/" className={`flex gap-2`}>
+          <Image
+            src="/colorful_logo_svgweb.svg"
+            width={20}
+            height={20}
+            alt="logo"
+            loading="lazy"
+          />
+          <span
+            className={`${
+              isScrolled || isSpecialPage ? "text-slate-800" : "text-slate-50"
+            }`}
+          >
+            BRSOFT
+          </span>
+        </Link>
         <nav>
           <ul
-            className={` gap-10 justify-between hidden md:flex items-center uppercase ${
-              isScrolled ? "text-slate-800" : "text-slate-50"
+            className={`gap-10 justify-between hidden md:flex items-center uppercase ${
+              isSpecialPage || isScrolled ? "text-slate-800" : "text-slate-50"
             }`}
           >
             <li>
-              <Link href="about">about us</Link>
+              <Link href="/">{translations.home}</Link>
             </li>
             <li>
-              <Link href="services">services</Link>
+              <Link href="/about">{translations.about}</Link>
             </li>
             <li>
-              <Link href="contact">contact</Link>
+              <Link href="/services">{translations.services}</Link>
+            </li>
+            <li>
+              <Link href="/contact">{translations.contact}</Link>
+            </li>
+            <li>
+              <Link href="/work">{translations.products}</Link>
             </li>
           </ul>
         </nav>
+        <div>
+          <LanguageSwitcher
+            isSpecialPage={isSpecialPage}
+            isScrolled={isScrolled}
+          />
+        </div>
       </header>
       <div className={styles.header}>
         <motion.div

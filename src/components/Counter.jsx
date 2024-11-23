@@ -35,7 +35,7 @@ const Counter = () => {
 
   return (
     <section className="" id="counter">
-      <div className="flex flex-wrap max-w-screen-xl mt-12 mx-auto border-image-top justify-center gap-8 p-6">
+      <div className="flex flex-wrap flex-col md:flex-row max-w-screen-xl mt-12 mx-auto border-image-top justify-center gap-8 p-6">
         {counters.map((counter, index) => (
           <div key={index} className="text-center">
             <p className="text-4xl font-bold text-slate-800 mb-2">

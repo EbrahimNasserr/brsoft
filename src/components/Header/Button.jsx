@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import styles from "./style.module.scss";
+import { FaBars } from "react-icons/fa";
 
 export default function Button({ isActive, toggleMenu }) {
   return (
@@ -33,7 +34,9 @@ export default function Button({ isActive, toggleMenu }) {
 function PerspectiveText({ label }) {
   return (
     <div className={styles.perspectiveText}>
-      <p>{label}</p>
+      <p className="text-white">
+        <FaBars />
+      </p>
       <p>{label}</p>
     </div>
   );

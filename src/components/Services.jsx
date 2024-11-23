@@ -10,7 +10,7 @@ const Services = () => {
           All You Need to Create a Pro Website
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 text-slate-600 mt-10 gap-5">
-          <div className="border box relative overflow-hidden rounded-xl border-slate-500 shadow-blue-400 border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border box relative overflow-hidden rounded-xl border-slate-500 shadow-blue-400 border-opacity-35 shadow transition-all text-center p-4">
             <div className="flex justify-center w-full h-40">
               <Image
                 src="/feature1.png"
@@ -23,10 +23,9 @@ const Services = () => {
             <p className="text-sm leading-relaxed">
               Gain real-time insights with advanced AI-driven analytics.
             </p>
-            <div className=" h-20 w-20 bg-blue-400 absolute -top-20 rounded-3xl -right-20 circle -z-10 transition-all duration-700 "></div>
           </div>
 
-          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow transition-all text-center p-4">
             <div className="flex justify-center  w-full h-40">
               <Image
                 src="/feature2.png"
@@ -41,7 +40,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow transition-all text-center p-4">
             <div className="flex justify-center  w-full h-40">
               <Image
                 src="/feature2.png"
@@ -56,7 +55,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"
@@ -71,7 +70,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"
@@ -86,7 +85,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"
@@ -101,7 +100,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"
@@ -116,7 +115,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow hover:scale-110 transition-all text-center p-4">
+          <div className="border border-slate-500 shadow-blue-400 rounded-xl border-opacity-35 shadow transition-all text-center p-4">
             <div className="flex justify-center">
               <Image
                 src="/Asset 3.png"

@@ -24,3 +24,42 @@ export const projects = [
         color: "#C2491D"
     },
 ]
+
+export const WorkPageprojects = [
+    {
+        title: "IslamicEcho",
+        src: "/1.jpg",
+        color: "#000000",
+        link: "/products/1",
+    },
+    {
+        title: "IMDB Clone",
+        src: "/1.jpg",
+        color: "#fff",
+        link: "/products/2",
+    },
+    {
+        title: "Nike Store Commerce",
+        src: "/1.jpg",
+        color: "#000000",
+        link: "/products/3",
+    },
+    {
+        title: "Crypto React App",
+        src: "/project2.webp",
+        color: "#8C8C8C",
+        link: "https://crypto-react-app-alpha.vercel.app/",
+    },
+    {
+        title: "Travil",
+        src: "/project3.webp",
+        color: "#EFE8D3",
+        link: "https://ebrahimnasserr.github.io/Tour-And-Travel/",
+    },
+    {
+        title: "Restaurant",
+        src: "/project4.webp",
+        color: "#706D63",
+        link: "https://ebrahimnasserr.github.io/Food_Restaurant/",
+    },
+];

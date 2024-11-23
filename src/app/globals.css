@@ -10,11 +10,31 @@ body {
   background-color: #fff;
 }
 
+/* For RTL language support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="ltr"] {
+  text-align: left;
+}
+
 .left-col,
 .right-col {
   position: absolute;
   width: 50%;
   height: 100vh;
+}
+
+@media (max-width: 991px) {
+  .right-col {
+    height: 0;
+    display: none;
+  }
+
+  .bottom {
+    display: none;
+  }
 }
 
 .left-col {
@@ -148,6 +168,7 @@ body {
   color: #6f6457;
   font-family: Poppins;
   text-transform: uppercase;
+  font-size: 25px;
 }
 
 .about p {
@@ -156,11 +177,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 10px;
-  cursor: pointer;
-}
-
-.about span:hover {
-  text-decoration: underline;
+  margin-bottom: 5px;
 }
 
 .media {
@@ -296,14 +313,14 @@ body {
 
 .border-image-bottom {
   border-bottom: 2px solid white;
-  border-image: linear-gradient(to right, rgb(0, 0, 0), transparent) 2 / 1 /
-    0 stretch;
+  border-image: linear-gradient(to right, rgb(0, 0, 0), transparent) 2 / 1 / 0
+    stretch;
 }
 
 .border-image-top {
   border-top: 2px solid white;
-  border-image: linear-gradient(to left, rgb(0, 0, 0), transparent) 2 / 1 /
-    0 stretch;
+  border-image: linear-gradient(to left, rgb(0, 0, 0), transparent) 2 / 1 / 0
+    stretch;
 }
 
 .view {
